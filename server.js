@@ -6,10 +6,10 @@ const cors = require('cors')
 app.use(cors());
 
 app.set('port', process.env.PORT || 3002);
-app.locals.title = 'Genre API';
+app.locals.title = 'Rancid Custom API';
 
 app.get('/', (request, response) => {
-  response.send('Genre API');
+  response.send('Rancid Custom API');
 });
 
 app.listen(app.get('port'), () => {
@@ -24,14 +24,13 @@ app.get('/movies', (request, response) => {
   });
 
 
-  app.get('/movies/:id', (request, response) => {
-    console.log(app.locals.movies)
-    const { id } = request.params
-    const movie = app.locals.movies.movies.find(movie => movie.id == id)
-    if(!movie) {
-        return response.sendStatus(404)
-    }
-    const data = {movie: movie}
-    response.status(200).json(data);
-   
-  });
+app.get('/movies/:id', (request, response) => {
+console.log(app.locals.movies)
+const { id } = request.params
+const movie = app.locals.movies.movies.find(movie => movie.id == id)
+if(!movie) {
+    return response.sendStatus(404)
+}
+const data = {movie: movie}
+response.status(200).json(data);
+});
