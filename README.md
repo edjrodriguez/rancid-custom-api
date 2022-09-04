@@ -7,7 +7,7 @@ Those endpoints can be found here:
 Get all movies - [here](https://rancid-tomatillos.herokuapp.com/api/v2/movies)
 Get a single movie - [here](https://rancid-tomatillos.herokuapp.com/api/v2/movies/:movie_id)
 
-This single API was created to store the details for each of the 40 movies in one place which was required to allow the user to filter movies by genre with respect to the applications architecture.
+This single API was created to store the details for each of the 40 movies in one place which was required to allow the user to filter movies by genre with respect to the application architecture.
 
 ## Technologies Used
 - Express 
@@ -15,10 +15,8 @@ This single API was created to store the details for each of the 40 movies in on
 - GitHub & Git
 
 ## Setup  
-
-1. On the top right corner of this page, click the Fork button.
-2. Clone down the forked repo into a local directory.  CD into that directory
-3. Then install the library dependencies. Run:
+1. Clone down the repo into a local directory.  CD into that directory
+2. Then install the library dependencies. Run:
 
 ```bash or zsh
 npm install
@@ -32,7 +30,7 @@ You should see:
 Rancid Custom API is running on http://localhost:3002.
 ```
 
-4.  Go to `http://localhost:3002/` and you should see "Rancid Custom API" at the top of the browser window
+3.  Go to `http://localhost:3002/` and you should see "Rancid Custom API" at the top of the browser window
 
 Enter `control + c` in your terminal to stop the server at any time.
 
