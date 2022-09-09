@@ -5,7 +5,7 @@ const cors = require('cors')
 
 app.use(cors());
 
-app.set('port', process.env.PORT || 3002);
+app.set('port',  3002);
 app.locals.title = 'Genre API';
 
 app.get('/', (request, response) => {
